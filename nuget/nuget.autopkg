@@ -21,10 +21,10 @@ nuget{
 		licenseUrl: "http://opensource.org/licenses/MIT";
 		projectUrl: "http://www.pixman.org/";
 		iconUrl: "http://www.pixman.org/parrot.jpg";
-		requireLicenseAcceptance: false;
+		requireLicenseAcceptance:false;
 		summary: Pixman static library;
 
-		description: "Pixman static library";
+		description: @"Pixman static library";
 		releaseNotes: "Initial release";
 		copyright: Copyright 2015;
 		tags: { native, v140, v141, v142 };

@@ -2,7 +2,7 @@ configurations {
         UserPlatformToolset {
                 // Needed because autopackage lacks VS2015+ support
                 key = "PlatformToolset";
-                choices: "v140,v141,142";
+                choices: "v140,v141,v142";
         };
 
         RuntimeLibrary {

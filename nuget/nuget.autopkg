@@ -41,7 +41,7 @@ nuget{
 
                 //==== v140 tools ====
 
-		[x86,v140,release] {
+				[x86,v140,release] {
                         lib: ..\msvs_solution\v140_Release\pixman.lib;
                 }
                 [x86,v140,debug] {

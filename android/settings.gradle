@@ -1,1 +1,1 @@
-include ':app', ':pixman'
+include ':pixman'

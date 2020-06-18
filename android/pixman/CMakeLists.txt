@@ -47,22 +47,23 @@ set(srcs
         ../../pixman/pixman-utils.c
     )
 
-link_directories( build/ndkLibs/${ANDROID_ABI}/ )
+include (${ANDROID_GRADLE_NATIVE_BUNDLE_PLUGIN_MK})
+include_directories(../../COPKG)
 
-add_library( # Specifies the name of the library.
-             ${name}
+add_library(
+        # Specifies the name of the library.
+        ${name}
 
-             # Sets the library as a shared library.
-             STATIC
+        # Sets the library as a shared library.
+        STATIC
 
-             # Provides a relative path to your source file(s).
-             ${srcs} )
-
-include_directories( build/ndkLibs/include/ ../../COPKG)
+        # Provides a relative path to your source file(s).
+        ${srcs}
+    )
 
 add_definitions(-DPIXMAN_NO_TLS -DHAVE_CONFIG_H)
 
 target_link_libraries(
         ${name}
-        android log
+        android log ${ANDROID_GRADLE_NATIVE_MODULES}
     )

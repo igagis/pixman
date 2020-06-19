@@ -36,7 +36,7 @@ nuget{
 	files {
 		include: {
 			"..\pixman\*.h";
-			"..\COPKG\*.h";
+//			"..\COPKG\*.h";
 		};
 
                 //==== v140 tools ====

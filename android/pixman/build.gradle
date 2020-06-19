@@ -21,9 +21,9 @@ android {
     }
 
     nativeBundleExport {
-        headerDir = "${project.projectDir}/../../"
+        headerDir = "${project.projectDir}/../../pixman"
         bundleStatic = true
-        includeHeaderFilter.add("pixman/**/*.h")
+        includeHeaderFilter.add("**/*.h")
     }
 
     buildTypes {
